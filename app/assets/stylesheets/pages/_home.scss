@@ -6,11 +6,11 @@
 
 h1 {
   font-size: 72px;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 50px;
   text-align: left;
   letter-spacing: 1px;
-  color: #F56960;
+  color: white;
 }
 
 h2 {
@@ -19,10 +19,11 @@ h2 {
   text-align: left;
   line-height: 35px;
   letter-spacing: 1px;
+  color: white;
 }
 
 body {
-  background-color: white;
+  background-color: #F9988D;
   min-height: 70vh;
 }
 
@@ -191,8 +192,7 @@ body {
   width: 100%;
   border-radius: 15px;
   box-shadow: 0 4px 5px 0 rgba(0,0,0,0.2);
-  margin-top: 50px;
-  border: 4px solid #F56960;
+  margin-top: 10px;
 }
 
 .text {
