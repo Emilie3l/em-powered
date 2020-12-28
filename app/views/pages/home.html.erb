@@ -3,21 +3,22 @@
     <div class="col-lg-5 col-sm-12 text">
       <script src="typed.js"></script>
       <div class="container text-home">
-        <div class="header">
-          <h1 class="prefix">Em<span id="typed"></span></h1>
-        </div>
-        <div class="tagline">
-          <h2>It's a pleasure to e-meet you.</h2>
+        <div>
+          <h1 class="header">em</h1><img class="avatar-large" alt="avatar-large" src="https://res.cloudinary.com/dsgq0xxxv/image/upload/v1609171761/me_dzcxll.jpg" />
+          <h3><span id="typed"></span></h3>
         </div>
       </div>
     </div>
 
     <div class="col-lg-6">
-      <img class="photo">
+      <h4 class="myprojects-header">projects</h4>
+      <p><%= link_to 'refresh', refresh_path, class: "works-link refresh" %></p>
+      <p><%= link_to 'stupidbug', stupidbug_path, class: "works-link stupidbug" %></p>
     </div>
   </div>
 </div>
 
+<%#<div>
   <div class="cards">
     <div class="card-trip">
       <div class="card-title" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dsgq0xxxv/image/upload/v1608074513/james-mckinven-tpuAo8gVs58-unsplash_rinwkl.jpg)">
@@ -91,7 +92,6 @@
   </div>
 </div>
 
-
 <!-- <div>
     <div class="card-trip">
       <div>
@@ -122,4 +122,4 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> %>

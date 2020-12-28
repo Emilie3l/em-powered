@@ -24,8 +24,10 @@ require("channels")
 
 // External imports
 import "bootstrap";
-import { initTyped } from "../plugins/typed"
+import { initTyped } from "../plugins/typed";
 import { initUpdateNavbarOnScroll } from '../components/navbar';
+//import { animateFrom } from "../plugins/initScroll";
+//import { hide } from "..plugins/initScroll";
 
 
 // Internal imports, e.g:
@@ -36,3 +38,18 @@ document.addEventListener('turbolinks:load', () => {
     initTyped();
     initUpdateNavbarOnScroll();
 });
+
+//document.addEventListener("DOMContentLoaded", function() {
+//  gsap.registerPlugin(ScrollTrigger);
+
+//  gsap.utils.toArray(".gs_reveal").forEach(function(elem) {
+//    hide(elem); // assure that the element is hidden when scrolled into view
+
+//    ScrollTrigger.create({
+//      trigger: elem,
+//      onEnter: function() { animateFrom(elem) },
+//      onEnterBack: function() { animateFrom(elem, -1) },
+//      onLeave: function() { hide(elem) } // assure that the element is hidden when scrolled into view
+//    });
+//  });
+//});
