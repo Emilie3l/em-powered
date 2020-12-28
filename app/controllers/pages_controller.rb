@@ -6,4 +6,7 @@ class PagesController < ApplicationController
 
   def refresh
   end
+
+  def stupidbug
+  end
 end

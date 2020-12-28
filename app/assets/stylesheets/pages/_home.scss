@@ -10,9 +10,14 @@ h1 {
   text-align: left;
   letter-spacing: 1px;
   color: black;
+}
+
+.header {
   margin-bottom: 0;
   padding-bottom: 0;
   line-height: 160px;
+  z-index: -1;
+  margin-left: 20px;
 }
 
 h2 {
@@ -30,12 +35,24 @@ body {
 }
 
 #typed {
-  font-size: 96px;
   font-weight: 700;
+  font-size: 76px;
   text-align: left;
   letter-spacing: 1px;
   color: black;
   padding-top: 0;
+  font-family: "Montserrat";
+}
+
+h3 {
+  font-size: 76px;
+  font-weight: 700;
+  text-align: left;
+  letter-spacing: 1px;
+  color: black;
+  margin-top: 10px;
+  font-family: "Montserrat";
+  margin-left: 30px;
 }
 
 .works-link {
@@ -43,16 +60,47 @@ body {
   font-family: "Montserrat";
   margin-left: 40px;
   padding-left: 80px;
-  color:#FFCC9F;
+  font-weight: bold;
+  line-height: 100px;
 }
 
 .works-link:hover {
   font-size: 96px;
   font-family: "Montserrat";
-  margin-left: 20px;
-  color:#FFCC9F;
-  text-decoration: none;
+  margin-left: 40px;
+  padding-left: 80px;
+  line-height: 100px;
 }
+
+.refresh {
+  color: #FFCC9F;
+}
+
+.refresh:hover {
+  color: #FFCC9F;
+}
+
+.stupidbug {
+  color: #8670FF;
+}
+
+.stupidbug:hover {
+  color: #8670FF;
+}
+
+.myprojects-header {
+  font-size: 16px;
+  letter-spacing: 2.4px;
+  line-height: 13px;
+  font-family: "Montserrat";
+  font-weight: semi-bold;
+  text-align: center;
+  color: black;
+  position: absolute;
+  left: 140px;
+  top: -20px;
+}
+
 
 .banner {
   height: 200px;
@@ -64,6 +112,7 @@ body {
   max-width: 100vw;
   margin-top: 30px;
   margin-bottom: 30px;
+  position: relative;
 }
 
 .tagline {
@@ -165,6 +214,7 @@ body {
   gap: 75px 55px;
   justify-items: center;
   margin: 100px;
+  margin-top: 200px;
 }
 
 // Smallest device
