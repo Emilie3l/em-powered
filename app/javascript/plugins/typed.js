@@ -2,7 +2,7 @@ import Typed from 'typed.js';
 
 const initTyped = () => {
     var options = {
-    strings: ['powered.', 'pathic.', 'ilie.'],
+    strings: ['powered.'],
     typeSpeed: 80,
     loop: true,
     loopCount: Infinity,
