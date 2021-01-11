@@ -18,6 +18,8 @@ h1 {
   line-height: 160px;
   z-index: -1;
   margin-left: 20px;
+  color: white;
+  text-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 h2 {
@@ -39,9 +41,10 @@ body {
   font-size: 76px;
   text-align: left;
   letter-spacing: 1px;
-  color: black;
+  color: white;
   padding-top: 0;
   font-family: "Montserrat";
+  text-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 h3 {
@@ -49,10 +52,26 @@ h3 {
   font-weight: 700;
   text-align: left;
   letter-spacing: 1px;
-  color: black;
+  color: white;
   margin-top: 10px;
   font-family: "Montserrat";
   margin-left: 30px;
+}
+
+.startups {
+  font-size: 76px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 1px;
+  color: black;
+  margin-top: 100px;
+  font-family: "Montserrat";
+}
+
+.intro {
+  text-align: center;
+  margin-top: 40px;
+  font-weight: bold;
 }
 
 .works-link {
@@ -88,15 +107,17 @@ h3 {
   color: #8670FF;
 }
 
-.myprojects-header {
-  font-size: 18px;
-  line-height: 35px;
+.hey-header {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 1px;
   font-family: "Lato";
   text-align: left;
-  color: black;
+  color: white;
   position: absolute;
   left: 100px;
-  top: 160px;
+  top: 145px;
+  text-shadow: 0 2px 15px rgba(0,0,0,0.2);
 }
 
 
@@ -107,6 +128,16 @@ h3 {
   padding: 180px 0;
   margin-bottom: 25px;
   align-content: center;
+}
+
+.startup-title {
+  color: black;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 1px;
 }
 
 .dynamic-text {
@@ -282,6 +313,7 @@ h3 {
 /* Styles from the GreenSock website */
 body {
   font-weight: 300;
+  background-color: white;
 }
 .ipsType_right {
   text-align: right;
