@@ -1,5 +1,4 @@
 .text-home {
-  padding: 60px 0;
   text-align: center;
   max-width: 1300px;
 }
@@ -20,6 +19,7 @@ h1 {
   margin-left: 20px;
   color: white;
   text-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin-top: -120px;
 }
 
 h2 {
@@ -31,9 +31,30 @@ h2 {
   color: white;
 }
 
+.main-container {
+  padding-left: 160px;
+  padding-right: 80px;
+}
+
+.photo {
+  background-image: asset-url('me.png');
+  background-size: cover;
+  min-height: 550px;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,0.2);
+  margin-top: 10px;
+}
+
 body {
   //background-color: white;
   min-height: 70vh;
+}
+
+.small-text {
+  font-size: 17px;
+  line-height: 30px;
+  letter-spacing: 1px;
 }
 
 #typed {
@@ -71,7 +92,11 @@ h3 {
 .intro {
   text-align: center;
   margin-top: 40px;
-  font-weight: bold;
+  color: black;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 1px;
 }
 
 .works-link {
@@ -108,18 +133,23 @@ h3 {
 }
 
 .hey-header {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 32px;
   letter-spacing: 1px;
-  font-family: "Lato";
   text-align: left;
   color: white;
   position: absolute;
-  left: 100px;
-  top: 145px;
+  top: -28px;
+  left: 50px;
   text-shadow: 0 2px 15px rgba(0,0,0,0.2);
 }
 
+.text {
+  flex-grow: 3;
+  margin-right: 30px;
+  margin-top: 60px;
+}
 
 .banner {
   height: 100vh;
@@ -130,14 +160,17 @@ h3 {
   align-content: center;
 }
 
+.resources {
+  margin-top: 20px;
+}
+
 .startup-title {
   color: black;
-  font-family: Montserrat;
   font-size: 24px;
   font-weight: 500;
   text-align: left;
   line-height: 35px;
-  letter-spacing: 1px;
+  margin-top: 50px;
 }
 
 .dynamic-text {
@@ -145,6 +178,7 @@ h3 {
   margin-top: 30px;
   margin-bottom: 30px;
   position: relative;
+  margin-left: 20px;
 }
 
 .tagline {
@@ -152,244 +186,3 @@ h3 {
   text-align: center;
 }// Specific CSS for your home-page
 
-.card-trip {
-  overflow: hidden;
-  background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  border-radius: 10px;
-  position: relative;
-  text-align: center;
-}
-
-.card-trip > img {
-  height: 200px;
-  width: 100%;
-  object-fit: cover;
-}
-
-.card-trip h2 {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0;
-}
-
-.card-trip p {
-  font-size: 12px;
-  opacity: .7;
-  margin: 0;
-}
-
-
-.card-trip .card-trip-infos {
-  padding: 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  position: relative;
-}
-
-.status-avatar {
-  background-color: white;
-  height: 40px;
-  width: 50px;
-  border-radius: 50px;
-  position: absolute;
-  right: 16px;
-  top: -30px;
-  width: 40px;
-  border: 1px solid #9bf6ff;
-}
-
-.fa-rocket {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  color: green;
-  font-size: 20px !important;
-}
-
-.fa-hourglass-start {
-  position: absolute;
-  right: 11px;
-  top: 10px;
-  color: orange;
-  font-size: 20px !important;
-}
-
-.fa-lightbulb {
-  position: absolute;
-  right: 12px;
-  top: 10px;
-  color: red;
-  font-size: 20px !important;
-}
-
-.card-title {
-  background-size: cover;
-  background-position: center;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  border-radius: 5px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-}
-
-.cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 75px 55px;
-  justify-items: center;
-  margin: 100px;
-  margin-top: 200px;
-}
-
-// Smallest device
-@media (min-width: 100px) and (max-width: 575px) {
-  .cards {
-    grid-template-columns: 1fr;
-  }
-}
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-  .cards {
-    grid-template-columns: 1fr;
-  }
-}
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-  .cards {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-  .cards {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-  .cards {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-.main-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin-top: -200px;
-  padding-left: 160px;
-  padding-right: 80px;
-  padding-top: 50px;
-}
-
-.photo {
-  background-image: asset-url('me.png');
-  background-size: cover;
-  min-height: 550px;
-  width: 100%;
-  border-radius: 15px;
-  box-shadow: 0 4px 5px 0 rgba(0,0,0,0.2);
-  margin-top: 10px;
-}
-
-.text {
-  flex-grow: 3;
-  margin-right: 30px;
-  margin-top: 60px;
-}
-
-/* Styles from the GreenSock website */
-body {
-  font-weight: 300;
-  background-color: white;
-}
-.ipsType_right {
-  text-align: right;
-}
-.ipsType_center {
-  text-align: center;
-}
-.cInnerContent {
-  max-width: 1240px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.ipsSpacer_bottom_double {
-  margin-bottom: 30px;
-}
-.ipsGrid {
-  display: inline-block;
-  display: -ms-flexbox;
-  display: flex;
-  flex-wrap: wrap;
-}
-.ipsGrid::before, .ipsGrid::after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.ipsGrid > [class*="ipsGrid_span"] {
-  display: block;
-  width: 100%;
-  min-height: 30px;
-  box-sizing: border-box;
-}
-.ipsGrid > .ipsGrid_span5 {
-  width: 40.42553191489362%;
-}
-.ipsGrid > .ipsGrid_span7 {
-  width: 57.44680851063829%;
-}
-.ipsGrid > [class*="ipsGrid_span"] {
-  float: left;
-  margin-left: 2%;
-}
-.ipsGrid > [class*="ipsGrid_span"]:first-child {
-  margin-left: 0;
-}
-.feature {
-  display: flex;
-  align-items: center;
-}
-.card {
-  margin-bottom: 30px;
-  border: 1px solid #cccccc;
-  border-radius: 8px;
-  overflow: hidden;
-  background: #ffffff;
-  box-shadow: 1px 1px 5px 1px #CCCCCC;
-  transition: 0.3s;
-}
-.featured-image-container .card {
-  padding: 10px;
-  height: 0;
-  padding-bottom: calc(100% - 10px);
-}
-h2.heading_large {
-  font-size: 1.8em;
-}
-img {
-  max-width: 100%;
-}
-
-.header-section {
-  margin: 200px auto;
-}
-
-.gs_reveal {
-  opacity: 0;
-  visibility: hidden;
-  transition: transform 0s;
-}
