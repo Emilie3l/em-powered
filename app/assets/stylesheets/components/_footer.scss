@@ -21,8 +21,9 @@
 .footer-links a {
   text-decoration: none;
   font-size: 20px;
-  padding: 0px 10px;
+  padding: 0px 20px;
   color: black;
+  padding-bottom: 40px;
 }
 
 .footer-links a:hover {
@@ -36,5 +37,29 @@
 .fyp-foo-txt {
   font-family: $headers-font;
   font-size: 20px;
+  color: black;
+}
+
+.fa-instagram {
+  color: #78C4C0;
+}
+
+.fa-linkedin {
+  color: #78C4C0;
+}
+
+.fa-paper-plane {
+  color: #78C4C0;
+}
+
+.fa-instagram:hover {
+  color: black;
+}
+
+.fa-linkedin:hover {
+  color: black;
+}
+
+.fa-paper-plane:hover {
   color: black;
 }
