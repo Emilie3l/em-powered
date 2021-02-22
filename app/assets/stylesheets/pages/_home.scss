@@ -71,6 +71,7 @@ body {
   color: black;
   font-weight: 500;
   letter-spacing: 1px;
+  margin-bottom: 60px;
 }
 
 .works-link {
@@ -127,6 +128,15 @@ body {
 
 .banner {
   background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dsgq0xxxv/image/upload/v1610376993/em-powered/IMG_4157-2_copy_z0f2h0.jpg);
+}
+
+.photo {
+  background-image: asset-url('lilmisstech.png');
+  background-size: cover;
+  min-height: 350px;
+  width: 180px;
+  border-radius: 5px;
+  box-shadow: 0 4px 5px 0 rgba(134, 112, 255, 0.25);
 }
 
 // Smallest device
