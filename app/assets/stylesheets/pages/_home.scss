@@ -133,8 +133,8 @@ body {
 .photo {
   background-image: asset-url('lilmisstech.png');
   background-size: cover;
-  min-height: 350px;
-  width: 180px;
+  height: 100%;
+  width: 100%;
   border-radius: 5px;
   box-shadow: 0 4px 5px 0 rgba(134, 112, 255, 0.25);
 }
@@ -148,6 +148,15 @@ body {
     padding-bottom: 220px;
     padding-right: 50px;
     background-position: center;
+  }
+
+  .photo {
+    height: 250px;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 4px 5px 0 rgba(134, 112, 255, 0.25);
+    justify-content: center;
+    margin-left: 20px;
   }
 
   .header {
@@ -255,6 +264,13 @@ body {
     padding: 300px 0;
     margin-bottom: 25px;
     align-content: center;
+  }
+
+  .photo {
+    min-height: 350px;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 4px 5px 0 rgba(134, 112, 255, 0.25);
   }
 
   .header {
